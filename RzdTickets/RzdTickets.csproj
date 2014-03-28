@@ -87,16 +87,14 @@
     <Compile Include="Train.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="RequestsConfig">
-      <SubType>Designer</SubType>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <None Include="App.config" />
     <Content Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="packages.config" />
-    <None Include="RzdTickets_TemporaryKey.pfx" />
+    <None Include="RequestsConfig">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
