@@ -77,7 +77,7 @@ namespace RzdTickets
 
             _inRequestInterval = int.Parse(System.Configuration.ConfigurationSettings.AppSettings[KEY_IN_REQUEST_INTERVAL]) * 1000;
             _url = string.Format(URL_PATTERN,
-                    _request.From, 2000000, _request.Date.ToString(Misc.FORMAT_DATE), _request.Time, _request.To, 2004000, DateTime.Now.ToString(Misc.FORMAT_DATE));
+                    _request.From, _request.FromId, _request.Date.ToString(Misc.FORMAT_DATE), _request.Time, _request.To, _request.ToId, DateTime.Now.ToString(Misc.FORMAT_DATE));
         }
         #endregion
 

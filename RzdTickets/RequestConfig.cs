@@ -11,7 +11,9 @@ namespace RzdTickets
     {
         #region Свойства из конфигурации
         public string From { get; set; }
+        public long FromId { get; set; }
         public string To { get; set; }
+        public long ToId { get; set; }
         public DateTime Date { get; set; }
 
         private string _time; //Если предпочитаемое время не передано, задаем интервал 0-24, т.е. полный день
